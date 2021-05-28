@@ -1,0 +1,80 @@
+.container {
+	padding-top: 200px;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+
+.progressbar::before {
+	content: "";
+	max-width: 350px;
+	width: 99%;
+	position: absolute;
+	height: 2px;
+	background-color: grey;
+	z-index: -2;
+}
+
+.progressbar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 350px;
+	position: relative;
+}
+
+#progressline {
+	max-width: 99%;
+	position: absolute;
+	width: 0%;
+	height: 10px;
+	background-color: cornflowerblue;
+	z-index: -1;
+	transition: 0.5s ease;
+}
+
+.circle {
+	background-color: white;
+	width: 50px;
+	height: 50px;
+	border: 2px solid grey;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: monospace;
+}
+.circle.active {
+	transition: border 0.5s ease;
+	transition: background-color 0.5s ease;
+	border: 2px solid cornflowerblue;
+	background-color: rgb(187, 209, 250);
+}
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+button {
+	margin: 25px;
+	padding: 10px 30px;
+	cursor: pointer;
+	background-color: cornflowerblue;
+	border: none;
+	color: white;
+	font-size: 20px;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:disabled {
+	background-color: grey;
+	cursor: not-allowed;
+}

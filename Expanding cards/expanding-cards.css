@@ -1,0 +1,65 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+}
+
+.cards {
+	border: 2px solid black;
+	height: 90vh;
+	margin: 5px;
+	border-radius: 30px;
+	margin: auto;
+	position: relative;
+	width: 6vw;
+	color: black;
+	cursor: pointer;
+	background-size: auto 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: width 700ms ease-in;
+}
+
+#card1 {
+	background: url("https://source.unsplash.com/1000x1000/?nature");
+}
+
+#card2 {
+	background: url("https://source.unsplash.com/1000x1000/?mountains");
+}
+
+#card3 {
+	background: url("https://source.unsplash.com/1000x1000/?sea");
+}
+
+#card4 {
+	background: url("https://source.unsplash.com/1000x1000/?farms");
+}
+#card5 {
+	background: url("https://source.unsplash.com/1000x1000/?jungle");
+}
+
+.cards h3 {
+	font-family: monospace;
+	font-size: 24px;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	opacity: 0;
+	transition: opacity 1000ms ease;
+}
+
+.active {
+	width: 70vw;
+}
+
+.active h3 {
+	opacity: 1;
+}
+
+@media (max-width: 480px) {
+	.cards:nth-of-type(4),
+	.cards:nth-of-type(5) {
+		display: none;
+	}
+}
