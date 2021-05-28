@@ -1,0 +1,103 @@
+* {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+.container {
+	background: grey;
+	width: 100vw;
+	height: 1000px;
+	overflow-x: hidden;
+	position: relative;
+}
+
+.article {
+	background-color: aliceblue;
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	transition: transform 0.4s ease;
+}
+
+.article h2,
+.article p,
+.article div {
+	padding: 25px;
+}
+
+.article div {
+	width: 90%;
+	height: 20%;
+	background: linear-gradient(
+		to right,
+		#e40e0e 0%,
+		#0b73cb 50%,
+		#444c75 100%
+	);
+}
+
+.article.nav-on {
+	transform-origin: top left;
+	transform: rotate(-20deg);
+}
+
+.nav-button {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-color: rgb(255, 72, 72);
+	border-radius: 50%;
+	top: -100px;
+	left: -100px;
+	z-index: 10;
+	/* transform: rotate(-90deg);
+	transition: transform 0.4s; */
+}
+
+.nav-button div button {
+	color: white;
+	font-size: 20px;
+	background: transparent;
+	position: absolute;
+	border: none;
+	cursor: pointer;
+}
+
+#open {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	padding: 15px;
+}
+#close {
+	position: absolute;
+	bottom: 20px;
+	right: 135px;
+	padding: 15px;
+}
+.nav-button {
+	transform: rotate(-90deg);
+	transition: transform 0.4s ease;
+}
+ul {
+	position: absolute;
+	bottom: 200px;
+	left: -200px;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	transition: 0.4 ease;
+}
+
+ul li {
+	padding: 10px;
+	font-size: 24px;
+}
+
+ul.nav-on {
+	left: 50px;
+	transition: 0.4 ease;
+}
