@@ -3,8 +3,8 @@
 // nav-button
 // article
 
-// let open = document.getElementById("o");
-// let close = document.getElementById("c");
+let bopen = document.getElementById("open");
+let bclose = document.getElementById("close");
 
 let article = document.querySelector(".article");
 let nav = document.querySelector(".nav-button");
@@ -22,3 +22,6 @@ close = () => {
 	nav.classList.remove("nav-on");
 	list.classList.remove("nav-on");
 };
+
+bopen.addEventListener("click", open);
+bclose.addEventListener("click", close);
