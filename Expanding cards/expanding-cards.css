@@ -21,22 +21,22 @@
 }
 
 #card1 {
-	background: url("https://source.unsplash.com/1000x1000/?nature");
+	background: url("https://source.unsplash.com/1300x1000/?nature");
 }
 
 #card2 {
-	background: url("https://source.unsplash.com/1000x1000/?mountains");
+	background: url("https://source.unsplash.com/1300x1000/?mountains");
 }
 
 #card3 {
-	background: url("https://source.unsplash.com/1000x1000/?sea");
+	background: url("https://source.unsplash.com/1300x1000/?sea");
 }
 
 #card4 {
-	background: url("https://source.unsplash.com/1000x1000/?farms");
+	background: url("https://source.unsplash.com/1300x1000/?farms");
 }
 #card5 {
-	background: url("https://source.unsplash.com/1000x1000/?jungle");
+	background: url("https://source.unsplash.com/1300x1000/?jungle");
 }
 
 .cards h3 {
