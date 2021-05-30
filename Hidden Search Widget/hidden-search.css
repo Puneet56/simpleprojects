@@ -1,0 +1,38 @@
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background: linear-gradient(to left, rgb(233, 14, 160), rgb(14, 54, 233));
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	max-width: 300px;
+}
+
+#btn {
+	width: 60px;
+	height: 50px;
+	cursor: pointer;
+	margin: 10px;
+	border: none;
+	outline: none;
+	transform: translateX(-20px);
+}
+
+.text {
+	transition: width 0.4s ease;
+	width: 0%;
+	height: 48px;
+	outline: none;
+	border: none;
+}
+
+.clicked {
+	width: 100%;
+}
