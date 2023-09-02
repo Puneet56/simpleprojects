@@ -4,10 +4,6 @@
 	text-align: center;
 	font-family: "Kumbh Sans", sans-serif;
 }
-body {
-	width: 100vw;
-	height: 120vh;
-}
 
 .header {
 	width: 100%;
@@ -46,7 +42,7 @@ body {
 	}
 
 	100% {
-		width: 45%;
+		width: calc(50% - 100px);
 	}
 }
 
@@ -66,8 +62,8 @@ body {
 .circle {
 	position: absolute;
 	z-index: 5;
-	width: 10%;
-	height: 10vw;
+	height: 200px;
+	aspect-ratio: 1/1;
 	background-size: contain;
 	background-repeat: no-repeat;
 	border-radius: 50%;
@@ -137,7 +133,7 @@ h1 {
 
 .projects-list {
 	margin: auto;
-	width: 80%;
+	width: 90vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -146,6 +142,7 @@ h1 {
 	border: 2px solid grey;
 	border-radius: 5px;
 	box-shadow: 5px 5px 9px 0px rgba(0, 0, 0, 0.8);
+	margin-bottom: 4rem;
 }
 
 .project {
@@ -166,12 +163,14 @@ h1 {
 .project a button {
 	text-decoration: none;
 }
+
 .links {
 	display: flex;
 	flex-direction: row;
 	align-content: flex-end;
 	justify-content: flex-end;
 }
+
 .open,
 .code {
 	font-size: 20px;
@@ -202,20 +201,14 @@ h1 {
 	transition-property: color, background-color, border-color;
 	transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
 }
+
 .open:hover {
 	background-color: #30363d;
 	transform: scale(1.05);
 	border-color: #fff;
 }
-@media (max-width: 480px) {
-	.line1,
-	.line2 {
-		max-width: 35%;
-	}
-	.circle {
-		width: 30%;
-		height: 30vw;
-	}
+
+@media (max-width: 768px) {
 	.intro h1 {
 		margin-top: 30px;
 		font-size: 40px;
@@ -229,18 +222,21 @@ h1 {
 	.projects-list {
 		width: 100%;
 	}
+
 	.project {
 		width: 100%;
 		font-size: 20px;
 		flex-direction: column;
 		padding: 10px 2px;
 	}
+
 	.links {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
 	}
+
 	.open,
 	.code {
 		font-size: 15px;
