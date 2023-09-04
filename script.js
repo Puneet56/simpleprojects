@@ -50,9 +50,9 @@ const data = [
 		code: "https://github.com/Puneet56/simpleprojects/tree/master/fractal-tree",
 	},
 	{
-		name: "Fallling balls",
-		link: "falling-balls/index.html",
-		code: "https://github.com/Puneet56/simpleprojects/tree/master/falling-balls",
+		name: "Fallling balls Matterjs",
+		link: "matterjs-balls/index.html",
+		code: "https://github.com/Puneet56/simpleprojects/tree/master/matterjs-balls",
 	},
 	{
 		name: "Perlin noise",
